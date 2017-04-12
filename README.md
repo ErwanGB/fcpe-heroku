@@ -1,5 +1,4 @@
-Create Flights between airports 
+FCPE API
 
 - PostgresSQL
 - Node / Express / Sequelize
-- React
