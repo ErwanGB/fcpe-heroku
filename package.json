@@ -5,18 +5,23 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "server": "node server.js"  
+    "server": "node server.js",
+    "test": "mocha"
   },
   "author": "Erwan GB",
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.15.2",
+    "expect": "^1.20.2",
     "express": "4.14.0",
+    "mocha": "^3.3.0",
     "morgan": "1.7.0",
     "pg": "6.1.0",
     "pg-hstore": "2.3.2",
     "sequelize": "3.24.3",
-    "sequelize-cli": "2.4.0"
+    "sequelize-cli": "2.4.0",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
   },
   "devDependencies": {
     "concurrently": "^3.4.0",

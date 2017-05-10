@@ -1,5 +1,5 @@
 /* jshint indent: 2 */
-
+var module;
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('classe', {
     id: {
@@ -29,6 +29,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'classe'
+    tableName: 'classe',
+    timestamps: false
   });
 };

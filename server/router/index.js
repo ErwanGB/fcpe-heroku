@@ -1,5 +1,5 @@
-'use strict'
-
+'use strict';
+var require;
 const routes = [
   /*require('./routes/owners'),
   require('./routes/pets')
@@ -11,6 +11,7 @@ const routes = [
 
 
 // Add access to the app and db objects to each route
+var module;
 module.exports = function router(app, db) {
   return routes.forEach((route) => {
     route(app, db);

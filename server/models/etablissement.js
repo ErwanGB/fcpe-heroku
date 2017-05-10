@@ -1,5 +1,5 @@
 /* jshint indent: 2 */
-
+var module;
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('etablissement', {
     id: {
