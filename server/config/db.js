@@ -23,7 +23,7 @@ const sequelize = new Sequelize(env.DATABASE_URL, {
 });
 
 // Connect all the models/tables in the database to a db object,
-//so everything is accessible via one object
+//so everything is accessible via one objectd
 const db = {};
 
 db.Sequelize = Sequelize;
