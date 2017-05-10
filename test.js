@@ -1,3 +1,5 @@
+"use strict";
+
 let expect = require('expect')
 var should = require('should'); 
 var request = require('supertest'); 
