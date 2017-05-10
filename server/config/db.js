@@ -4,7 +4,7 @@
 
 var require,module;
 
-const Sequelize = require("sequelize");
+/*const Sequelize = require("sequelize");
 const env = require("./env");
 const sequelize = new Sequelize(env.DATABASE_NAME, env.DATABASE_USERNAME, env.DATABASE_PASSWORD, {
   host: env.DATABASE_HOST,
@@ -13,14 +13,14 @@ const sequelize = new Sequelize(env.DATABASE_NAME, env.DATABASE_USERNAME, env.DA
   define: {
     underscored: true
   }
-});
+});*/
 
-/*const sequelize = new Sequelize(env.DATABASE_URL, {
+const sequelize = new Sequelize(env.DATABASE_URL, {
   logging: false,
   dialectOptions: {
     ssl: true // for SSL config since Heroku gives you this out of the box 
   }
-});*/
+});
 
 // Connect all the models/tables in the database to a db object,
 //so everything is accessible via one object
