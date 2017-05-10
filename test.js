@@ -10,7 +10,7 @@ describe('Test',()=>{
           if (err) {
             throw err;
           }
-          // this is should.js syntax, very clear
+          // this is should.js syntax, very clear ho
           res.should.have.status(400);
           done();
         });
