@@ -24,7 +24,7 @@ const sequelize = new Sequelize(env.DATABASE_URL, {
   }
 });
 
-// Connect all the models/tables in the database to a db object,
+// Connect all the models/tables in the database to a db object, okokok
 //so everything is accessible via one objectd
 const db = {};
 
