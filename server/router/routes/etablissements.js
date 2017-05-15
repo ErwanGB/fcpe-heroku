@@ -13,6 +13,16 @@ module.exports = (app, db) => {
       });
   });
 
+  app.get('/ets/:id',(req,res)=>{
+    const id = req.params.id;
+    db.ets.find({
+      where: { id: id}
+    })
+    .then(et =>{
+      res.json(et);
+    })
+  });
+
   app.get('/ets/classes', (req, res) => {
     db.ets.findAll({
       include: {
